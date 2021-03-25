@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  background: #191919;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+:root {
+  --color-primary: rgb(83, 100, 250);
+  --color-secoundary: rgb(227, 234, 255);
+  --color-number-hover: rgb(243, 244, 252);
+  --color-orange: rgb(247, 161, 140);
+}
+
+div.calculator {
+  width: 280px;
+  height: 400px;
+  background: #fff;
+}
+
+div.calculator div.display {
+  width: 100%;
+  height: 120px;
+  background: var(--color-primary);
+  position: relative;
+}
+
+div.calculator div.display p {
+  color: #fff;
+  padding: 10px;
+}
+
+div.calculator div.display p.on {
+  display: none;
+}
+
+div.calculator div.display div.display-content {
+  display: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+div.calculator div.display div.display-content span {
+  position: relative;
+  left: 8px;
+  top: 6px;
+  color: var(--color-orange);
+}
+
+div.calculator div.display div.display-content div.box-date span {
+  font-size: 13px;
+}
+
+div.calculator div.display div.display-content div.box {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+}
+
+div.calculator div.display div.display-content div.box h1 {
+  padding-top: 10px;
+}
+
+div.calculator div.buttons {
+  width: 100%;
+  height: calc(400px - 120px);
+  background: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+}
+
+div.calculator div.buttons div.clear {
+  font-size: 23px;
+  background: var(--color-orange);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: linear .1s;
+  transition: linear .1s;
+  cursor: pointer;
+}
+
+div.calculator div.buttons div.clear:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+div.calculator div.buttons div.sinals {
+  font-size: 23px;
+  background: var(--color-secoundary);
+  color: var(--color-primary);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: linear .1s;
+  transition: linear .1s;
+  cursor: pointer;
+}
+
+div.calculator div.buttons div.sinals:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+div.calculator div.buttons div.number {
+  font-size: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: linear .1s;
+  transition: linear .1s;
+  cursor: pointer;
+}
+
+div.calculator div.buttons div.number:hover {
+  background: var(--color-number-hover);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=style.css.map */
