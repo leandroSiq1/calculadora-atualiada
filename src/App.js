@@ -1,4 +1,5 @@
 import { Display } from './DisplayCalc.js';
+import { DOM } from './Dom.js';
 
 const App = {
   init() {
@@ -11,7 +12,7 @@ const App = {
 
     btn.addEventListener('click', () => {
       textState.classList.toggle("on");
-
+      
       // state == class Element
       const state = textState.classList[0];
       const time = Display.idTime;
@@ -19,6 +20,7 @@ const App = {
       if (state) {
         btn.textContent = "close";
         Display.displayInfos({ state, time });
+        DOM.addEvents();
 
       } else {
         btn.textContent = "ligar";
